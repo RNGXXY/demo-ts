@@ -1,0 +1,137 @@
+
+@import '~antd/es/style/themes/default.less';
+@import './variable.less';
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: @body-background;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: @border-color;
+}
+
+:root {
+  --text-color: @level-fir-font-color;
+  --text-color-secondary: @level-sec-font-color;
+  --disabled-color: #babfbf;
+}
+
+@font-face {
+  font-family: 'DINPro Medium';
+  src: local('DINPro Medium'),
+    url('//chs.newrank.cn/font/DINPro.woff2') format('woff2'),
+    url('//chs.newrank.cn/font/DINPro.woff') format('woff'),
+    url('//chs.newrank.cn/font/DINPro.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zbmark';
+  src: local('Zb Medium'),
+    url('//chs.newrank.cn/font/zb.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AlibabaPuHuiTiM';
+  src: url('//chs.newrank.cn/font/puhui.woff2') format('woff2'),
+    url('//chs.newrank.cn/font/puhui.woff') format('woff'),
+    url('//chs.newrank.cn/font/puhui.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@checkbox-prefix-cls: ~'@{ant-prefix}-checkbox';
+@dialog-prefix-cls: ~'@{ant-prefix}-modal';
+@btn-prefix-cls: ~'@{ant-prefix}-btn';
+
+.@{checkbox-prefix-cls} {
+  &-inner {
+    border-radius: 0px !important;
+  }
+}
+
+.@{dialog-prefix-cls} {
+  .@{btn-prefix-cls} {
+    &-default {
+      background: #ffffff;
+      &:hover,
+      &:active,
+      &:focus {
+        background: #ffffff;
+      }
+    }
+  }
+  .@{ant-prefix}-input {
+    background-color: transparent;
+  }
+}
+
+.ant-back-top:empty {
+  display: none;
+}
+
+body {
+  min-width: 1280px;
+  .ant-tabs-top > .ant-tabs-nav::before,
+  .ant-tabs-bottom > .ant-tabs-nav::before {
+    border: none;
+  }
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  code,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  p,
+  blockquote,
+  th,
+  td,
+  hr,
+  button,
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+

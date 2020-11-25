@@ -1,0 +1,9 @@
+{
+  "name": "crh_chat",
+  "version": "1.0-test",
+  "main": "main.js",
+  "author": {
+    "name": "YOURNAME"
+  },
+  "license": "MIT"
+}
